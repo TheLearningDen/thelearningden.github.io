@@ -5,33 +5,22 @@
 /************************* TAG SELECTORS *************************/
 body {
   background-color: #333333;
+  color: #f5f5f5;
+  margin: 0;
   min-height: 100vh;
   position: relative;
   text-align: center;
 }
 
-button {
-  background-color:#f5f5f5;
-  border: none;
-  border-radius:4px;
-  box-shadow: 0 5px 7px -3px #202020;
-  color: #202020;
-  height: 30px;
-  margin-top: 30px;
-  width: 90px;
-}
-
-button:hover {
-	opacity: 75%;
-}
-
-div {
-  color: #f5f5f5;
-}
-
 footer {
-  color: #f5f5f5;
-  margin-top: 15%;
+  margin-top: 13%;
+}
+
+header {
+  background-color: #202020;
+  margin-top: 0;
+  opacity: 75%;
+  z-index: 1;
 }
 
 h1 {
@@ -42,23 +31,64 @@ h1 {
   text-shadow: 5px 0 #232931;
 }
 
+nav {
+  align-items: center;
+  display: flex;
+  height: 45px;
+}
+
+/*nav a*/
+nav p {
+  color: #f5f5f5;
+  flex: 2;
+  text-decoration: none;
+}
+
 /************************ CLASS SELECTORS ************************/
 .container {
   margin: auto;
-  width: 70%;
+  width: 80%;
 }
 
 .content {
-  display: inline-block;
-  font-size: 2rem;
+  align-items: center;
+  display: flex;
+}
+
+.content-spacer {
+  flex: 1;
+}
+
+.featured-page {
   height: 250px;
-  width: 250px;
+  flex: 3;
+}
+
+.page-pic {
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #232931, -2px -2px 2px 2px #6d6d6d;
 }
 
 /************************** ID SELECTORS *************************/
 #logo {
-  border-radius: 50%;
-  left: 5px;
+  left: 15px;
   position: absolute;
-  top: -10px;
+  top: 0;
+  z-index: 2;
+}
+
+#nav-space-1 {
+  flex: 2;
+  margin-top: 3px;
+}
+
+#nav-space-2 {
+  flex: 1;
+}
+
+/************************** MEDIA QUERIES *************************/
+@media only screen and (min-width: 1024px) {
+  body {
+    overflow: hidden;
+  }
 }
