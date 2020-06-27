@@ -16,9 +16,8 @@ footer {
 }
 
 header {
-  background-color: #002266;
+  background-color: #f5f5f5;
   margin-top: 0;
-  opacity: 85%;
   z-index: 1;
 }
 
@@ -32,8 +31,10 @@ h1 {
 
 nav {
   align-items: center;
+  background-color: #002266;
   display: flex;
   height: 45px;
+  opacity: 85%;
 }
 
 /*nav a*/
